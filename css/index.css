@@ -1,0 +1,8 @@
+body{
+    background: #F1EEEE;
+    font-family: 'Inter', sans-serif;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="flex menu">
+                <div class="favourite-books">
+                    <p class="p-heading">Любимые книги</p>
+                    <div class="favourite-books-content">
+                        <div class="flex books-content-book">
+                            <p class="p-name-book" onclick="openBook(this)">- </p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  " onclick="deleteBook(this)">
+                            </div>
+                        </div>
+                        <div class="flex books-content-book">
+                            <p class="p-name-book" onclick="openBook(this)">- Book number 2</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  " onclick="deleteBook(this)">
+                            </div>
+                        </div>
+                        <div class="flex books-content-book">
+                            <p class="p-name-book" onclick="openBook(this)">- Book number 3</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  " onclick="deleteBook(this)">
+                            </div>
+                        </div>
+                        <div class="flex books-content-book">
+                            <p class="p-name-book" onclick="openBook(this)">- Book number 4</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  " onclick="deleteBook(this)">
+                            </div>
+                        </div>
+                        <div class="dropzone" draggable="true">DROP DOWN AREA</div>
+                    </div>
+                </div>
+
+                <div class="list-books">
+                    <p class="p-heading">Список книг</p>
+                    <div class="list-books-content">
+                        <div class="flex books-content-book">
+                            <p class="p-name-book">- Book number 1</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  ">
+                            </div>
+                        </div>
+                        <div class="flex books-content-book">
+                            <p class="p-name-book">- Book number 2</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  ">
+                            </div>
+                        </div>
+                        <div class="flex books-content-book">
+                            <p class="p-name-book">- Book number 3</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  ">
+                            </div>
+                        </div>
+                        <div class="flex books-content-book">
+                            <p class="p-name-book">- Book number 4</p>
+                            <div class="flex book__input">
+                                <input class="book__input-func" type="button" value="ред.">
+                                <input class="book__input-func" type="button" value="прочитана">
+                                <input class="book__input-func" type="button" value="читать">
+                                <input class="book__input-func" type="button" value="  x  ">
+                            </div>
+                        </div>
+                        <div class="dropzone" draggable="true">DROP DOWN AREA</div>
+                    </div>
+                </div>
+
+                <div class="books">
+                    <p class="p-heading">Добавить книгу</p>
+                    <div class="flex upload-books-content">
+                        <label class="upload-book__label" for="upload">
+                            <input name="choice" value="upload" id="upload" type="radio">
+                            Загрузить книгу
+                        </label>
+                        <label class="upload-book__label" for="write">
+                            <input name="choice" value="write" id="write" type="radio">
+                            Написать самому
+                        </label>
+                        <input class="upload-book__input-book" type="text" placeholder="Заголовок">
+                        <textarea class="upload-book__textarea" placeholder="Описание"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reading">
+                <p class="p-heading reading__h"></p>
+                <p class="reading__book-content"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
