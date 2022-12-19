@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 function openBook(elem) {
-    // при переключении снова цвет блока становится белым
+    // при переключении между книгами цвет предыдущего блока становится белым
     const allWhiteBack = document.getElementsByClassName('books-content-book');
     for (let i = 0; i < allWhiteBack.length; i++) {
         allWhiteBack[i].style.background = 'white';
     }
     // меняем цвет у блока с книгой
-    elem.style.background = '#E8DEDE';
+    elem.parentElement.style.background = '#E8DEDE';
     // ищем книгу в массиве
-    elem = elem.firstElementChild.innerHTML;
+    elem = elem.innerHTML;
     const index = books.findIndex(e => e.title === elem.split('- ')[1]);
     // создаем тег p
     document.getElementsByClassName('reading__h')[0].innerHTML = elem.split('- ')[1];
@@ -45,5 +45,7 @@ function openBook(elem) {
 function deleteBook(elem) {
     const index = books.findIndex(e => e.title === elem.parentElement.parentElement.firstElementChild.innerHTML.split('- ')[1]);
     books.splice(index,1);
+    document.getElementsByClassName('reading__h')[0].innerHTML = '';
+    document.getElementsByClassName('reading__book-content')[0].innerHTML = '';
     elem.parentElement.parentElement.remove();
 }
