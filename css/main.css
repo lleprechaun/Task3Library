@@ -18,6 +18,10 @@ main{
     background: white;
     padding: 10px 9px;
 }
+.favourite-books-content__books{
+    overflow: auto;
+    height: 100px;
+}
 .books-content-book{
     justify-content: space-between;
     align-items: center;
@@ -25,7 +29,6 @@ main{
     padding-left: 9px;
     height: 30px;
     margin-bottom: 3px;
-    cursor: pointer;
 }
 .p-heading{
     font-weight: 700;
@@ -37,6 +40,7 @@ main{
     font-weight: 700;
     font-size: 0.9rem;
     line-height: 22px;
+    cursor: pointer;
 }
 .book__input{
     font-weight: 900;
@@ -78,6 +82,12 @@ main{
     background: white;
     padding: 10px 9px;
 }
+.list-books-content__books{
+    overflow: auto;
+    height: 100px;
+}
+
+
 
 .upload-books-content{
     width: 70%;
@@ -103,7 +113,18 @@ main{
     font-weight: 400;
     font-size: 11px;
     line-height: 18px;
-    height: 70px;
+    height: 100px;
+}
+.upload-book__label-file{
+    display: none;
+    margin: 10px 0;
+}
+.upload-book__input-file{
+    display: none;
+}
+.upload-book__span-file{
+    padding:5px 10px;
+    font-size: 12px;
 }
 
 
@@ -113,9 +134,12 @@ main{
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(0, 0, 0, 0.1);
     padding: 0 15px;
     width: 45%;
+    display: none;
+    height: 95vh;
 }
 .reading__h{
     text-indent: 50px;
+    display: none;
 }
 .reading__book-content{
     font-weight: 400;
@@ -123,4 +147,46 @@ main{
     line-height: 22px;
     color: rgba(0, 0, 0, 0.8);
     text-align: justify;
+    overflow: auto;
+    height: 85%;
+    display: none;
+}
+.reading__editBook{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+}
+.editBook{
+    display: none;
+}
+.editBook__h{
+    height: 5%;
+    margin-bottom: 5px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background: white;
+}
+.editBook__book-content{
+    height: 85%;
+    margin-bottom: 5px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background: white;
+}
+.editBook__input-save{
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 0;
 }
