@@ -29,6 +29,7 @@ main{
     padding-left: 9px;
     height: 30px;
     margin-bottom: 3px;
+    background: white;
 }
 .p-heading{
     font-weight: 700;

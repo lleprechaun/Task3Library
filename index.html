@@ -16,7 +16,7 @@
                     <p class="p-heading">Любимые книги</p>
                     <div class="favourite-books-content">
                         <div class="favourite-books-content__books"></div>
-                        <div class="dropzone" draggable="true">DROP DOWN AREA</div>
+                        <div class="dropzone">DROP DOWN AREA</div>
                     </div>
                 </div>
 
@@ -24,7 +24,6 @@
                     <p class="p-heading">Список книг</p>
                     <div class="list-books-content">
                         <div class="list-books-content__books"></div>
-                        <div class="dropzone" draggable="true">DROP DOWN AREA</div>
                     </div>
                 </div>
 
@@ -40,11 +39,12 @@
                             <span class="book__input-func upload-book__span-file">Загрузить</span>
                         </label>
                         <label class="upload-book__label" for="write">
-                            <input name="choice" value="write" id="write" type="radio">
+                            <input name="choice" value="write" id="write" type="radio" onclick="writeBook()">
                             Написать самому
                         </label>
                         <input class="upload-book__input-book" type="text" placeholder="Заголовок">
                         <textarea class="upload-book__textarea" placeholder="Описание"></textarea>
+                        <input class="book__input-func" type="button" value="Сохранить" onclick="saveWriteBook()">
                     </div>
                 </div>
             </div>
